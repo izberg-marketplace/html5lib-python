@@ -17,6 +17,9 @@ from .html5parser import HTMLParser, parse, parseFragment
 from .treebuilders import getTreeBuilder
 from .treewalkers import getTreeWalker
 from .serializer import serialize
+from . import _inputstream
+
+inputstream = _inputstream
 
 __all__ = ["HTMLParser", "parse", "parseFragment", "getTreeBuilder",
            "getTreeWalker", "serialize"]
